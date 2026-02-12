@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "title": "Fever with yellow eyes",
+    "guideline": "Fever with yellowing of eyes may indicate liver involvement. In triage, assess duration, presence of dark urine, pale stools, abdominal pain, and fatigue. Encourage rest, hydration, and avoiding alcohol or unsafe remedies. Refer if jaundice with fever persists or worsening.",
+    "tags": ["fever", "yellow eyes", "jaundice", "liver"],
+    "risk": "High",
+    "safe_actions": ["Encourage oral hydration", "Advise rest", "Avoid alcohol and unsafe remedies", "Monitor urine color and stool changes"],
+    "referral": true
+  },
+  {
+    "id": 2,
+    "title": "High BP in pregnancy",
+    "guideline": "Raised blood pressure during pregnancy may pose a risk of complications. Assess headache, visual disturbances, swelling, and upper abdominal pain. Encourage calm environment, reduce stressors, and monitor symptoms. Immediate referral if severe headache, vision issues, or very high BP.",
+    "tags": ["high bp", "pregnancy", "preeclampsia"],
+    "risk": "High",
+    "safe_actions": ["Encourage quiet rest", "Reduce stressors", "Monitor swelling and headaches"],
+    "referral": true
+  },
+  {
+    "id": 3,
+    "title": "Chest pain in adult",
+    "guideline": "Chest pain with sweating, breathlessness, or radiation to arm may indicate cardiac risk. Keep the person calm, limit exertion, and monitor breathing. Immediate referral.",
+    "tags": ["chest pain", "cardiac"],
+    "risk": "High",
+    "safe_actions": ["Keep person calm", "Limit exertion", "Monitor breathing"],
+    "referral": true
+  },
+  {
+    "id": 4,
+    "title": "Severe dehydration",
+    "guideline": "Dry mouth, sunken eyes, very low urine output, and dizziness indicate possible severe dehydration and electrolyte imbalance. Encourage oral rehydration solution (ORS) and shade. Refer urgently if lethargic or unable to drink.",
+    "tags": ["dehydration", "electrolyte imbalance"],
+    "risk": "High",
+    "safe_actions": ["Give ORS sips frequently", "Keep in shade", "Encourage rest"],
+    "referral": true
+  },
+  {
+    "id": 5,
+    "title": "High fever in child",
+    "guideline": "High fever in a child for more than two days may indicate infection risk. Tepid sponging, hydration, and rest are safe steps. Refer if persistent high fever, convulsions, lethargy, or poor feeding.",
+    "tags": ["child", "high fever", "infection"],
+    "risk": "Medium",
+    "safe_actions": ["Tepid sponge", "Encourage fluids", "Maintain rest"],
+    "referral": true
+  },
+  {
+    "id": 6,
+    "title": "Prolonged cough with weight loss",
+    "guideline": "Cough lasting more than two weeks with weight loss may indicate a pulmonary risk. Encourage mask use to protect others, improve ventilation, and hydration. Refer for evaluation.",
+    "tags": ["cough", "weight loss", "pulmonary"],
+    "risk": "Medium",
+    "safe_actions": ["Use a clean cloth or mask", "Improve ventilation", "Encourage fluids"],
+    "referral": true
+  },
+  {
+    "id": 7,
+    "title": "Watery diarrhea",
+    "guideline": "Watery diarrhea may lead to dehydration. Encourage ORS, clean water, and hand hygiene. Refer if persistent, blood in stool, or signs of dehydration.",
+    "tags": ["diarrhea", "dehydration"],
+    "risk": "Medium",
+    "safe_actions": ["Give ORS", "Encourage clean water", "Promote hand hygiene"],
+    "referral": true
+  },
+  {
+    "id": 8,
+    "title": "Heat stroke",
+    "guideline": "Extreme heat exposure may cause heat stroke with confusion or fainting. Move to shade, cool with wet cloth, and give small sips of water if conscious. Immediate referral.",
+    "tags": ["heat", "stroke", "fainting"],
+    "risk": "High",
+    "safe_actions": ["Move to shade", "Cool with wet cloth", "Give small sips of water if conscious"],
+    "referral": true
+  },
+  {
+    "id": 9,
+    "title": "Hypothermia in elderly",
+    "guideline": "Cold exposure in elderly may cause shivering, confusion, and cold skin. Warm with blankets and warm environment. Refer if confusion or worsening.",
+    "tags": ["hypothermia", "elderly", "cold"],
+    "risk": "Medium",
+    "safe_actions": ["Provide warm blankets", "Warm environment", "Encourage warm fluids if safe"],
+    "referral": true
+  },
+  {
+    "id": 10,
+    "title": "Snakebite",
+    "guideline": "Possible snakebite requires keeping the person still, immobilizing the limb, and removing tight clothing or jewelry. Do not cut or suck the wound. Immediate referral.",
+    "tags": ["snakebite", "bite", "poison"],
+    "risk": "High",
+    "safe_actions": ["Keep person still", "Immobilize limb", "Remove tight items near the bite"],
+    "referral": true
+  },
+  {
+    "id": 11,
+    "title": "Pesticide exposure",
+    "guideline": "Exposure to agricultural chemicals may cause nausea, dizziness, or breathing difficulty. Move to fresh air, remove contaminated clothing, and wash skin with clean water. Immediate referral if breathing issues.",
+    "tags": ["pesticide", "chemical", "exposure"],
+    "risk": "High",
+    "safe_actions": ["Move to fresh air", "Remove contaminated clothing", "Wash skin with clean water"],
+    "referral": true
+  },
+  {
+    "id": 12,
+    "title": "Animal bite",
+    "guideline": "Animal bite may risk infection. Wash wound with clean water and soap, keep it covered, and refer for evaluation.",
+    "tags": ["animal bite", "wound", "infection"],
+    "risk": "Medium",
+    "safe_actions": ["Wash wound with clean water and soap", "Cover with clean cloth", "Encourage rest"],
+    "referral": true
+  },
+  {
+    "id": 13,
+    "title": "Burn injury",
+    "guideline": "Burns require cooling with clean cool water, avoiding ice or ointments, and keeping the area clean and loosely covered. Refer for large or deep burns.",
+    "tags": ["burn", "injury"],
+    "risk": "Medium",
+    "safe_actions": ["Cool with clean cool water", "Keep area clean", "Loosely cover with clean cloth"],
+    "referral": true
+  },
+  {
+    "id": 14,
+    "title": "Vaginal bleeding in pregnancy",
+    "guideline": "Bleeding during pregnancy is a red flag. Encourage lying on side, minimize movement, and avoid stressors. Immediate referral.",
+    "tags": ["pregnancy", "bleeding"],
+    "risk": "High",
+    "safe_actions": ["Lie on side", "Minimize movement", "Avoid stressors"],
+    "referral": true
+  },
+  {
+    "id": 15,
+    "title": "Neonatal yellowing of skin",
+    "guideline": "Yellowing of skin in a newborn may indicate jaundice. Encourage feeding, keep baby warm, and monitor sleepiness. Refer if worsening or poor feeding.",
+    "tags": ["neonatal", "jaundice", "yellow skin"],
+    "risk": "Medium",
+    "safe_actions": ["Encourage feeding", "Keep baby warm", "Monitor sleepiness"],
+    "referral": true
+  },
+  {
+    "id": 16,
+    "title": "Leg swelling with breathlessness",
+    "guideline": "Swollen legs with breathlessness may indicate circulatory risk. Encourage rest, elevate legs, and limit exertion. Refer urgently if breathless at rest.",
+    "tags": ["leg swelling", "breathlessness", "circulatory"],
+    "risk": "High",
+    "safe_actions": ["Elevate legs", "Limit exertion", "Encourage rest"],
+    "referral": true
+  },
+  {
+    "id": 17,
+    "title": "Convulsions",
+    "guideline": "Convulsions require keeping the area safe, turning the person to the side after convulsion stops, and avoiding putting anything in the mouth. Immediate referral.",
+    "tags": ["convulsions", "seizure"],
+    "risk": "High",
+    "safe_actions": ["Clear nearby hazards", "Turn to side after convulsion stops", "Monitor breathing"],
+    "referral": true
+  },
+  {
+    "id": 18,
+    "title": "Unconscious person",
+    "guideline": "Unconsciousness is a red flag. Check breathing, keep airway clear, place in recovery position if breathing, and refer immediately.",
+    "tags": ["unconscious", "red flag"],
+    "risk": "High",
+    "safe_actions": ["Check breathing", "Place in recovery position if breathing", "Keep airway clear"],
+    "referral": true
+  },
+  {
+    "id": 19,
+    "title": "Severe bleeding",
+    "guideline": "Severe bleeding requires applying firm pressure with a clean cloth, elevating the bleeding area if possible, and immediate referral.",
+    "tags": ["bleeding", "severe"],
+    "risk": "High",
+    "safe_actions": ["Apply firm pressure with clean cloth", "Elevate bleeding area if possible", "Keep person calm"],
+    "referral": true
+  },
+  {
+    "id": 20,
+    "title": "Ankle sprain",
+    "guideline": "Ankle sprain presents with pain and swelling after twisting injury. Rest, elevation, and cool compress are safe steps. Refer if unable to bear weight.",
+    "tags": ["sprain", "ankle", "injury"],
+    "risk": "Low",
+    "safe_actions": ["Rest", "Elevate ankle", "Apply cool compress"],
+    "referral": false
+  }
+]

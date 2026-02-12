@@ -1,0 +1,17 @@
+{
+  "high bp in pregnancy": ["preeclampsia", "gestational hypertension", "eclampsia"],
+  "severe headache in pregnancy": ["preeclampsia"],
+  "chest pain": ["cardiac risk", "angina", "myocardial infarction"],
+  "shortness of breath": ["respiratory distress", "heart failure"],
+  "fever with yellow eyes": ["liver involvement", "hepatitis"],
+  "severe dehydration": ["electrolyte imbalance"],
+  "convulsions": ["seizure risk"],
+  "snakebite": ["envenomation risk"],
+  "animal bite": ["infection risk"],
+  "burn injury": ["infection risk"],
+  "leg swelling": ["circulatory risk", "heart failure"],
+  "watery diarrhea": ["dehydration risk"],
+  "hypothermia": ["exposure risk"],
+  "heat stroke": ["heat injury"],
+  "prolonged cough": ["pulmonary risk", "tuberculosis risk"]
+}

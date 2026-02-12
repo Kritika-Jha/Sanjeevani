@@ -1,6 +1,21 @@
 from typing import List
 
-RED_FLAGS = {"unconscious", "severe bleeding", "chest pain"}
+RED_FLAGS = {
+    "unconscious",
+    "severe bleeding",
+    "chest pain",
+    "shortness of breath",
+    "difficulty breathing",
+    "confusion",
+    "fainting",
+    "very high fever",
+    "convulsions",
+    "pregnancy bleeding",
+    "pregnancy severe headache",
+    "neck stiffness",
+    "blood in vomit",
+    "blood in stool"
+}
 
 def has_red_flag(symptoms: List[str]) -> bool:
     s = {x.lower().strip() for x in symptoms}

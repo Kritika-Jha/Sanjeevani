@@ -15,7 +15,7 @@ export default function DoctorDashboard({ openAgentPanel }) {
       </div>
 
       <div className="grid2">
-        <div className="card">
+        <div className="card cardAccentPurple">
           <div className="cardHeader">
             <div>
               <h2 className="cardTitle">Patient</h2>
@@ -41,7 +41,7 @@ export default function DoctorDashboard({ openAgentPanel }) {
           </div>
         </div>
 
-        <div className="card">
+        <div className="card cardAccentCyan">
           <div className="cardHeader">
             <div>
               <h2 className="cardTitle">30-sec Summary</h2>
@@ -60,7 +60,7 @@ export default function DoctorDashboard({ openAgentPanel }) {
       </div>
 
       <div className="grid2">
-        <div className="card">
+        <div className="card cardAccentRose">
           <div className="cardHeader">
             <div>
               <h2 className="cardTitle">Case Summary</h2>
@@ -79,7 +79,7 @@ export default function DoctorDashboard({ openAgentPanel }) {
           </div>
         </div>
 
-        <div className="card">
+        <div className="card cardAccentCyan">
           <div className="cardHeader">
             <div>
               <h2 className="cardTitle">Timeline</h2>
@@ -115,7 +115,7 @@ export default function DoctorDashboard({ openAgentPanel }) {
         </div>
       </div>
 
-      <div className="card">
+      <div className="card cardAccentPurple">
         <div className="cardHeader">
           <div>
             <h2 className="cardTitle">Referral Generator</h2>
@@ -130,6 +130,35 @@ export default function DoctorDashboard({ openAgentPanel }) {
           <div style={{ display: 'flex', justifyContent: 'flex-end', gap: 10, flexWrap: 'wrap' }}>
             <button className="btn btnSecondary">Preview</button>
             <button className="btn btnPrimary">Download PDF</button>
+          </div>
+        </div>
+      </div>
+
+      <div className="grid2">
+        <div className="card cardAccentCyan">
+          <div className="cardHeader">
+            <div>
+              <h2 className="cardTitle">Quick Actions</h2>
+              <p className="cardSub">Common follow-ups for rapid care progression.</p>
+            </div>
+          </div>
+          <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
+            <button className="btn btnPrimary">Create Referral</button>
+            <button className="btn btnSecondary">Schedule Review</button>
+            <button className="btn btnSecondary">Notify Caregiver</button>
+          </div>
+        </div>
+        <div className="card cardAccentRose">
+          <div className="cardHeader">
+            <div>
+              <h2 className="cardTitle">Metrics</h2>
+              <p className="cardSub">Live case-oriented KPIs.</p>
+            </div>
+          </div>
+          <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
+            <span className="chip chipDanger">Urgent: 2</span>
+            <span className="chip chipWarn">Follow-ups: 5</span>
+            <span className="chip chipOk">Resolved: 12</span>
           </div>
         </div>
       </div>

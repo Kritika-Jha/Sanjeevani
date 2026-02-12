@@ -7,6 +7,8 @@ import DoctorDashboard from './pages/DoctorDashboard'
 import PatientProfile from './pages/PatientProfile'
 import AgentMonologue from './pages/AgentMonologue'
 import AdminAnalytics from './pages/AdminAnalytics'
+import Alerts from './pages/Alerts'
+import Settings from './pages/Settings'
 import { Routes, Route } from 'react-router-dom'
 
 function App() {
@@ -29,6 +31,7 @@ function App() {
         <div className="appContainer">
           <Routes>
             <Route path="/" element={<Landing />} />
+            <Route path="/dashboard" element={<DoctorDashboard openAgentPanel={() => setAgentPanelOpen(true)} />} />
             <Route
               path="/asha"
               element={
@@ -40,13 +43,14 @@ function App() {
                 />
               }
             />
-            <Route path="/doctor" element={<DoctorDashboard openAgentPanel={() => setAgentPanelOpen(true)} />} />
             <Route path="/patient" element={<PatientProfile />} />
             <Route
               path="/agents"
               element={<AgentMonologue logs={agentLogs} openAgentPanel={() => setAgentPanelOpen(true)} />}
             />
             <Route path="/admin" element={<AdminAnalytics />} />
+            <Route path="/alerts" element={<Alerts />} />
+            <Route path="/settings" element={<Settings />} />
           </Routes>
         </div>
       </div>

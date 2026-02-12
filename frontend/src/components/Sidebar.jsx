@@ -1,4 +1,14 @@
 import { NavLink } from 'react-router-dom'
+import {
+  LayoutDashboard,
+  PlusCircle,
+  Users,
+  Bell,
+  Bot,
+  BarChart3,
+  Settings as SettingsIcon,
+  Compass
+} from 'lucide-react'
 
 export default function Sidebar() {
   return (
@@ -9,45 +19,58 @@ export default function Sidebar() {
       </div>
       <div className="divider" />
       <nav className="nav">
-        <NavLink to="/asha" className={({ isActive }) => `navLink ${isActive ? 'navLinkActive' : ''}`}>
-          <span className="navIcon">D</span>
+        <NavLink to="/dashboard" className={({ isActive }) => `navLink ${isActive ? 'navLinkActive' : ''}`}>
+          <span className="navIcon iconDashboard">
+            <LayoutDashboard size={14} />
+          </span>
           Dashboard
         </NavLink>
         <NavLink to="/asha" className={({ isActive }) => `navLink ${isActive ? 'navLinkActive' : ''}`}>
-          <span className="navIcon">+</span>
+          <span className="navIcon iconNewCase">
+            <PlusCircle size={14} />
+          </span>
           New Case
         </NavLink>
         <NavLink to="/patient" className={({ isActive }) => `navLink ${isActive ? 'navLinkActive' : ''}`}>
-          <span className="navIcon">P</span>
+          <span className="navIcon iconPatients">
+            <Users size={14} />
+          </span>
           Patients
         </NavLink>
-        <NavLink to="/asha" className={({ isActive }) => `navLink ${isActive ? 'navLinkActive' : ''}`}>
-          <span className="navIcon">!</span>
+        <NavLink to="/alerts" className={({ isActive }) => `navLink ${isActive ? 'navLinkActive' : ''}`}>
+          <span className="navIcon iconAlerts">
+            <Bell size={14} />
+          </span>
           Alerts
         </NavLink>
         <NavLink to="/agents" className={({ isActive }) => `navLink ${isActive ? 'navLinkActive' : ''}`}>
-          <span className="navIcon">A</span>
+          <span className="navIcon iconAgents">
+            <Bot size={14} />
+          </span>
           Agent Logs
         </NavLink>
         <NavLink to="/admin" className={({ isActive }) => `navLink ${isActive ? 'navLinkActive' : ''}`}>
-          <span className="navIcon">📈</span>
+          <span className="navIcon iconAnalytics">
+            <BarChart3 size={14} />
+          </span>
           Analytics
         </NavLink>
-        <NavLink to="/admin" className={({ isActive }) => `navLink ${isActive ? 'navLinkActive' : ''}`}>
-          <span className="navIcon">⚙</span>
+        <NavLink to="/settings" className={({ isActive }) => `navLink ${isActive ? 'navLinkActive' : ''}`}>
+          <span className="navIcon iconSettings">
+            <SettingsIcon size={14} />
+          </span>
           Settings
         </NavLink>
       </nav>
       <div className="divider" />
       <nav className="nav">
         <NavLink to="/" className={({ isActive }) => `navLink ${isActive ? 'navLinkActive' : ''}`}>
-          <span className="navIcon">⎋</span>
+          <span className="navIcon iconLanding">
+            <Compass size={14} />
+          </span>
           Landing
         </NavLink>
-        <NavLink to="/doctor" className={({ isActive }) => `navLink ${isActive ? 'navLinkActive' : ''}`}>
-          <span className="navIcon">MD</span>
-          Doctor View
-        </NavLink>
+        
       </nav>
       <div className="sidebarFooter">
         <div className="statusPill">

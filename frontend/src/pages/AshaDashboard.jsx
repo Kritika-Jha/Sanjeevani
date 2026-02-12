@@ -2,7 +2,7 @@ import VoiceInput from '../components/VoiceInput'
 import CaseResult from '../components/CaseResult'
 import { useState } from 'react'
 
-const BACKEND_URL = 'http://localhost:8000'
+const BACKEND_URL = 'http://127.0.0.1:8000'
 
 export default function AshaDashboard({ loading, setLoading, addAgentLog, openAgentPanel }) {
   const [error, setError] = useState('')
@@ -61,7 +61,7 @@ export default function AshaDashboard({ loading, setLoading, addAgentLog, openAg
       </div>
 
       <div className="grid2">
-        <div className="card">
+        <div className="card cardAccentPurple">
           <div className="cardHeader">
             <div>
               <h2 className="cardTitle">Voice Recorder</h2>
@@ -74,7 +74,7 @@ export default function AshaDashboard({ loading, setLoading, addAgentLog, openAg
           {error && <div className="errorText" style={{ marginTop: 12 }}>{error}</div>}
         </div>
 
-        <div className="card">
+        <div className="card cardAccentCyan">
           <div className="cardHeader">
             <div>
               <h2 className="cardTitle">AI Processing Status</h2>
@@ -82,9 +82,9 @@ export default function AshaDashboard({ loading, setLoading, addAgentLog, openAg
             </div>
           </div>
           <div className="agentList">
-            <div className="agentRow">
+            <div className={`agentRow ${loading ? 'agentRowActive' : ''}`}>
               <div className="agentLeft">
-                <span className="navIcon">A</span>
+                <span className="navIcon iconA">A</span>
                 <div>
                   <div className="agentName">Agent A</div>
                   <div className="agentState">{loading ? 'Transcribing' : 'Idle'}</div>
@@ -92,9 +92,9 @@ export default function AshaDashboard({ loading, setLoading, addAgentLog, openAg
               </div>
               <span className={`chip ${loading ? 'chipWarn' : ''}`}>{loading ? 'Running' : 'Ready'}</span>
             </div>
-            <div className="agentRow">
+            <div className={`agentRow ${loading ? 'agentRowActive' : ''}`}>
               <div className="agentLeft">
-                <span className="navIcon">B</span>
+                <span className="navIcon iconB">B</span>
                 <div>
                   <div className="agentName">Agent B</div>
                   <div className="agentState">{loading ? 'Checking history & guidelines' : 'Idle'}</div>
@@ -102,9 +102,9 @@ export default function AshaDashboard({ loading, setLoading, addAgentLog, openAg
               </div>
               <span className={`chip ${loading ? 'chipWarn' : ''}`}>{loading ? 'Running' : 'Ready'}</span>
             </div>
-            <div className="agentRow">
+            <div className={`agentRow ${loading ? 'agentRowActive' : ''}`}>
               <div className="agentLeft">
-                <span className="navIcon">C</span>
+                <span className="navIcon iconC">C</span>
                 <div>
                   <div className="agentName">Agent C</div>
                   <div className="agentState">{loading ? 'Risk analysis' : 'Idle'}</div>
@@ -112,9 +112,19 @@ export default function AshaDashboard({ loading, setLoading, addAgentLog, openAg
               </div>
               <span className={`chip ${loading ? 'chipWarn' : ''}`}>{loading ? 'Running' : 'Ready'}</span>
             </div>
-            <div className="agentRow">
+            <div
+              className={`agentRow ${
+                (result?.risk_level || '').toLowerCase() === 'high'
+                  ? 'agentRowDanger'
+                  : (result?.risk_level || '').toLowerCase() === 'medium'
+                    ? 'agentRowWarn'
+                    : (result?.risk_level || '').toLowerCase() === 'low'
+                      ? 'agentRowOk'
+                      : ''
+              }`}
+            >
               <div className="agentLeft">
-                <span className="navIcon">R</span>
+                <span className="navIcon iconR">R</span>
                 <div>
                   <div className="agentName">Risk Score</div>
                   <div className="agentState">{result?.risk_level ? `Current: ${result.risk_level}` : 'Pending'}</div>
@@ -138,7 +148,7 @@ export default function AshaDashboard({ loading, setLoading, addAgentLog, openAg
         </div>
       </div>
 
-      <div className="card">
+      <div className="card cardAccentRose">
         <div className="cardHeader">
           <div>
             <h2 className="cardTitle">Generated Case Summary</h2>

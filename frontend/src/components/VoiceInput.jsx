@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 
-const BACKEND_URL = 'http://localhost:8000'
+const BACKEND_URL = 'http://127.0.0.1:8000'
 
 export default function VoiceInput({ onSubmit, loading, language = 'hi', addAgentLog }) {
   const [text, setText] = useState('')
@@ -94,7 +94,7 @@ export default function VoiceInput({ onSubmit, loading, language = 'hi', addAgen
       <div className="recorderTop">
         <button
           type="button"
-          className={`micButton ${recording ? 'micButtonRecording' : ''}`}
+          className={`micButton ${recording ? 'micButtonRecording' : 'micButtonPulse'}`}
           onClick={recording ? stopRecording : startRecording}
           disabled={loading}
           aria-label={recording ? 'Stop recording' : 'Start recording'}
